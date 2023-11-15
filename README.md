@@ -1,10 +1,10 @@
 # DiverseEvol: Self-Evolved Diverse Data Sampling for Efficient Instruction Tuning
 
 <p align="center">
-📖 <a href="https://arxiv.org" target="_blank">Paper</a>  <br>
+📖 <a href="https://arxiv.org/abs/2311.08182" target="_blank">Paper</a>  <br>
 </p>
 
-We introduce **DiverseEvol**, an efficient instruction-tuning method that allows the model itself to iteratively sample training subsets to improve its own performance, without requiring any external supervision from humans or more advanced LLMs. The key to the data selection technique lies in the maintenance of high diversity in the chosen subsets, as the model selects new data points most distinct from any existing ones according to its current embedding space. In experiments across three datasets and benchmarks, our models, trained on less than 8\% of the original dataset, maintain or improve performance compared with finetuning on full data. 
+We introduce **DiverseEvol**, an efficient instruction-tuning method that allows the model itself to iteratively sample training subsets to improve its own performance. Central to the data selection technique is the maintenance of high diversity in the chosen subsets, as the model selects new data points most distinct from any existing ones according to its current embedding space. In experiments across three datasets and benchmarks, our models, trained on less than 8\% of the original dataset, maintain or improve performance compared with finetuning on full data. 
 
 ## Getting Started
 
@@ -132,7 +132,7 @@ evol_diversity
 └── {YOUR-RESULT-DIR-NAME}_RD={rd_start}-{rd_end}_MEASURES=vendi.pkl
 ```
 
-Feel free to adjust the iteration range (`--rd_start` & `--rd_end`).
+You can also adjust the iteration range (`--rd_start` & `--rd_end`).
 
 ---
-Feel free to reach out, if you have any questions or need further assistance. Happy experimenting with DiverseEvol!
+Don't hesitate to reach out, if you have any questions or need further assistance. Happy experimenting with DiverseEvol!
