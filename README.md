@@ -32,7 +32,7 @@ source activate diverse_evol
 All configurations are stored in ``.yml`` files. We provide two example configs:
 
 - `configs/config_debug.yml`: for debugging on a small dataset.
-- `configs/config_example_kc_dolly.yml`: for running KCenterSampling-based DiverseEvol on the Databricks-Dolly dataset.
+- `configs/config_example_kc_dolly.yml`: for running KCenter-based DiverseEvol on the Databricks-Dolly dataset.
 
 You can customize these configurations to suit your experiment needs. Key configurations to consider include:
 
@@ -135,4 +135,4 @@ evol_diversity
 You can also adjust the iteration range (`--rd_start` & `--rd_end`).
 
 ---
-Don't hesitate to reach out, if you have any questions or need further assistance. Happy experimenting with DiverseEvol!
+Don't hesitate to reach out, if you have any questions or need further assistance. Happy experimenting with **DiverseEvol**!
