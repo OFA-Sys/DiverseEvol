@@ -4,7 +4,12 @@
 📖 <a href="https://arxiv.org/abs/2311.08182" target="_blank">Paper</a>  <br>
 </p>
 
-We introduce **DiverseEvol**, an efficient instruction-tuning method that allows the model itself to iteratively sample training subsets to improve its own performance. Central to the data selection technique is the maintenance of high diversity in the chosen subsets, as the model selects new data points most distinct from any existing ones according to its current embedding space. In experiments across three datasets and benchmarks, our models, trained on less than 8\% of the original dataset, maintain or improve performance compared with finetuning on full data. 
+We introduce **DiverseEvol**, an efficient instruction-tuning method that allows the model itself to iteratively sample training subsets to improve its own performance, without any external supervision from humans or more advanced LLMs. Central to our data selection technique is the maintenance of high diversity in the chosen subsets, as the model selects new data points most distinct from any existing ones according to its current embedding space. In experiments across three datasets and benchmarks, our models, trained on less than 8\% of the original dataset, maintain or improve performance compared with finetuning on full data. 
+
+Below shows the overall workflow of **DiverseEvol**:
+<p align="center">
+<img src="assets/diverse_evol_model.png" width=100%>
+</p>
 
 ## Getting Started
 
@@ -12,11 +17,11 @@ We introduce **DiverseEvol**, an efficient instruction-tuning method that allows
 
 Make sure you have the following prerequisites installed:
 
-- Python 3.10+
-- PyTorch 2.0+
-- Cuda 11.7+
-- Transformers 4.28.1+
-- Vendi_Score: https://github.com/vertaix/Vendi-Score.git
+- Python >= 3.10
+- PyTorch >= 2.0
+- Cuda >= 11.7
+- Transformers >= 4.28.1
+- Vendi_Score: https://github.com/vertaix/Vendi-Score
 
 ### Environment
 
@@ -134,5 +139,30 @@ evol_diversity
 
 You can also adjust the iteration range (`--rd_start` & `--rd_end`).
 
+
+## Acknowledgement
+Our implementation is largely inspired by the following codebases:
+* [stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca): A repository that shares the finetuning scripts of instruction-following LLaMA models.
+* [DeepAL](https://github.com/ej0cl6/deep-active-learning): A toolbox for various data sampling logics.
+
+
+## Citation
+
+If you find our paper and code useful in your research, please consider giving us a star ⭐ and citing us 📝: 
+
+```BibTeX
+@misc{wu2023selfevolved,
+      title={Self-Evolved Diverse Data Sampling for Efficient Instruction Tuning}, 
+      author={Shengguang Wu and Keming Lu and Benfeng Xu and Junyang Lin and Qi Su and Chang Zhou},
+      year={2023},
+      eprint={2311.08182},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+
+
 ---
-Don't hesitate to reach out, if you have any questions or need further assistance. Happy experimenting with **DiverseEvol**!
+If you have any questions or need further assistance, please don't hesitate to reach out: `wushengguang.wsg@alibaba-inc.com` or `lukeming.lkm@alibaba-inc.com`.
+
+Happy experimenting with **DiverseEvol** ^_^

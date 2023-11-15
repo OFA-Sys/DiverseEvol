@@ -1,4 +1,4 @@
-name: new_test
+name: diverse_evol
 channels:
   - defaults
 dependencies:
