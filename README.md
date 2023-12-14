@@ -151,13 +151,11 @@ Our implementation is largely inspired by the following codebases:
 If you find our paper and code useful in your research, please consider giving us a star ⭐ and citing us 📝: 
 
 ```BibTeX
-@misc{wu2023selfevolved,
-      title={Self-Evolved Diverse Data Sampling for Efficient Instruction Tuning}, 
-      author={Shengguang Wu and Keming Lu and Benfeng Xu and Junyang Lin and Qi Su and Chang Zhou},
-      year={2023},
-      eprint={2311.08182},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@article{wu2023self,
+  title={Self-Evolved Diverse Data Sampling for Efficient Instruction Tuning},
+  author={Wu, Shengguang and Lu, Keming and Xu, Benfeng and Lin, Junyang and Su, Qi and Zhou, Chang},
+  journal={arXiv preprint arXiv:2311.08182},
+  year={2023}
 }
 ```
 
